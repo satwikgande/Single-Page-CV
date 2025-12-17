@@ -1,2 +1,1 @@
-
-https://satwikgande.github.io/Single-Page-CV/
+https://github.com/satwikgande/Single-Page-CV.git
