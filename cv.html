@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- BASIC META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO META -->
+  <title>Resume Maker | Your Name</title>
+  <meta name="description" content="Online Resume Maker using HTML and CSS with live preview.">
+  <meta name="keywords" content="Resume, CV, Resume Maker, HTML Resume">
+  <meta name="author" content="Your Name">
+
+  <!-- OPEN GRAPH META -->
+  <meta property="og:title" content="Resume Maker">
+  <meta property="og:description" content="Create a professional resume using HTML and CSS.">
+  <meta property="og:type" content="website">
+
+  <!-- SVG FAVICON -->
+  <link rel="icon" href="data:image/svg+xml,
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+    <text y='.9em' font-size='90'>📄</text>
+  </svg>">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="cv.css">
+</head>
+
+<body>
+
+  <!-- ===== RESUME MAKER FORM ===== -->
+  <section class="container form-section">
+    <h2>Resume Maker</h2>
+
+    <input type="text" placeholder="Full Name" oninput="updateText('name', this.value)">
+    <input type="text" placeholder="Job Title" oninput="updateText('title', this.value)">
+    <input type="text" placeholder="Email" oninput="updateText('email', this.value)">
+    <input type="text" placeholder="Phone Number" oninput="updateText('phone', this.value)">
+    <input type="text" placeholder="Location" oninput="updateText('location', this.value)">
+    <input type="text" placeholder="Skills (comma separated)" oninput="updateText('skills', this.value)">
+    <input type="text" placeholder="College / University" oninput="updateText('college', this.value)">
+    <input type="text" placeholder="Degree" oninput="updateText('degree', this.value)">
+    <input type="text" placeholder="Education Year" oninput="updateText('eduYear', this.value)">
+    <input type="text" placeholder="Company Name" oninput="updateText('company', this.value)">
+    <input type="text" placeholder="Job Role" oninput="updateText('role', this.value)">
+  </section>
+
+  <!-- ===== RESUME PREVIEW ===== -->
+  <main class="container resume">
+
+    <!-- HEADER -->
+    <header>
+      <h1 id="name">Your Name</h1>
+      <p id="title">Junior Frontend Developer</p>
+      <address>
+        <p id="email">email@example.com</p>
+        <p id="phone">+91 98765 43210</p>
+        <p id="location">India</p>
+      </address>
+    </header>
+
+    <hr>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+      <p id="skills">HTML, CSS, JavaScript</p>
+    </section>
+
+    <hr>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <article>
+        <h3 id="college">XYZ University</h3>
+        <p id="degree">B.Tech – Computer Science</p>
+        <time id="eduYear">2021 – 2025</time>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
+      <article>
+        <h3 id="company">ABC Tech</h3>
+        <p id="role">Frontend Intern</p>
+        <ul>
+          <li>Built semantic HTML pages</li>
+          <li>Improved SEO structure</li>
+          <li>Created responsive layouts</li>
+        </ul>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Your Name</p>
+    </footer>
+
+  </main>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    function updateText(id, value) {
+      document.getElementById(id).textContent = value || " ";
+    }
+  </script>
+
+</body>
+</html>
