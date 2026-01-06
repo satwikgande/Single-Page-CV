@@ -1,2 +1,1 @@
-##project url
-https://satwikgande.github.io/Single-Page-CV/
+Project URL: https://satwikgande.github.io/Single-Page-CV/
