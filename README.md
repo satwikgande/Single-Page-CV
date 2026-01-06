@@ -1,2 +1,1 @@
-live demo:
-https://github.com/satwikgande/Single-Page-CV.git
+🔗 Live Demo: https://satwikgande.github.io/Single-Page-CV/
